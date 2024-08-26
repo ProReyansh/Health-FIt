@@ -1,0 +1,683 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(245, 243, 243);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav {
+  height: 3rem;
+  background-color: #fff;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.left-arrow {
+  margin-left: 10px;
+  cursor: pointer;
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.nav-left {
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+
+.anonymous {
+  margin-left: 10px;
+  margin-top: 7px;
+  cursor: pointer;
+  height: 2.2rem;
+  width: 2.2rem;
+}
+
+.up {
+  display: flex;
+  margin-top: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3px;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.dot {
+  height: 1rem;
+}
+
+.up b {
+  margin-left: 5px;
+}
+
+.up p {
+  margin-left: 5px;
+  color: rgb(121, 120, 120);
+  font-size: 12px;
+}
+
+.down {
+  color: rgb(121, 120, 120);
+  font-size: 12px;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.down-arrow {
+  height: 0.6rem;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.edit {
+  height: 1.6rem;
+  margin-left: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.video {
+  height: 1.6rem;
+  margin-left: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.nav-mid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.grid {
+  height: 0.6rem;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.px {
+  height: 1.2rem;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.over {
+  margin-left: 5px;
+  color: rgb(121, 120, 120);
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.pad {
+  color: rgb(121, 120, 120);
+  font-size: 12px;
+  margin-top: 1px;
+  cursor: pointer;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.temp {
+  height: 1rem;
+  margin-left: 10px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.settings {
+  height: 0.8rem;
+  margin-left: 10px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.gemini {
+  height: 1rem;
+  margin-left: 10px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.t-temp {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.conf {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.symptoms {
+  background-color: #fff;
+  padding: 10px 10px 20px 10px;
+  width: 96%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.symp-up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.symp-up-left {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.symp-up-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.bacteria {
+  height: 1.5rem;
+  margin-left: 10px;
+}
+
+.folder {
+  height: 1rem;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.tsx {
+  height: 2rem;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.symp {
+  margin-left: 10px;
+}
+
+.ICD {
+  margin-left: 10px;
+  padding: 2px 6px;
+  color: rgb(180, 179, 179);
+  border: 1px solid rgb(245, 243, 243);
+  border-radius: 5px;
+  background-color: rgb(245, 243, 243);
+}
+.search-inp {
+  font-size: 16px;
+  height: 2rem;
+  font-family: "Lexend", sans-serif;
+  color: rgb(150, 149, 149);
+  margin-left: var(--padding);
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid rgb(121, 120, 120);
+  padding: 10px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.search-icon {
+  height: 1.2rem;
+  width: 1.2em;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.vit-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.vit-head-left {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.vit-head-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.pen {
+  height: 1.5rem;
+  margin-left: 10px;
+}
+
+.vitals {
+  background-color: #fff;
+  padding: 20px 10px 10px 10px;
+  width: 96%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.blue-set {
+  height: 1rem;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.Vit {
+  margin-left: 10px;
+}
+
+.confi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  padding: 5px;
+  border: 2px solid rgb(3, 80, 142);
+  border-radius: 5px;
+  color: rgb(3, 80, 142);
+  cursor: pointer;
+}
+
+.vit-up-up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.vit-cons {
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.vit-cons-img {
+  height: 1.2rem;
+  margin-right: 10px;
+}
+
+.vit-cons-p {
+  margin-right: 100px;
+}
+
+.vit-cons-inp {
+  width: 100px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-right: 0px;
+  border-top: 1px solid rgb(150, 149, 149);
+  border-left: 1px solid rgb(150, 149, 149);
+  border-bottom: 1px solid rgb(150, 149, 149);
+  height: 1.5rem;
+}
+
+.vit-cons-but {
+  height: 1.6rem;
+  background-color: rgb(245, 243, 243);
+  padding: 2px;
+  font-size: 0.5rem;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  color: rgb(150, 149, 149);
+  border-left: 0;
+  border-top: 1px solid rgb(150, 149, 149);
+  border-right: 1px solid rgb(150, 149, 149);
+  border-bottom: 1px solid rgb(150, 149, 149);
+}
+
+.vit-up-down {
+  margin-bottom: 20px;
+}
+
+.vit-cons-but2 {
+  height: 1.58rem;
+  background-color: rgb(245, 243, 243);
+  padding: 2px;
+  font-size: 0.5rem;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  color: rgb(150, 149, 149);
+  border-left: 0;
+  border-top: 1px solid rgb(150, 149, 149);
+  border-right: 1px solid rgb(150, 149, 149);
+  border-bottom: 1px solid rgb(150, 149, 149);
+}
+
+.vit-cons-p2 {
+  margin-right: 61px;
+}
+
+.vit-hr {
+  margin-bottom: 10px;
+}
+
+.vit-down-up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.vit-down-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(245, 243, 243);
+  padding: 10px 7px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.vit-down-box-t {
+  font-size: 0.6rem;
+  margin-right: 5px;
+}
+
+.vit-down-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.vit-down-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.vit-cons-but3 {
+  height: 1.6rem;
+  background-color: rgb(245, 243, 243);
+  padding: 2px;
+  font-size: 0.7rem;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  color: rgb(121, 120, 120);
+  cursor: pointer;
+  border-left: 0;
+  border-top: 1px solid rgb(150, 149, 149);
+  border-right: 1px solid rgb(150, 149, 149);
+  border-bottom: 1px solid rgb(150, 149, 149);
+}
+
+.vit-cons-but39 {
+  height: 1.582rem;
+  background-color: rgb(245, 243, 243);
+  padding: 2px;
+  font-size: 0.7rem;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  color: rgb(121, 120, 120);
+  cursor: pointer;
+  border-left: 0;
+  border-top: 1px solid rgb(150, 149, 149);
+  border-right: 1px solid rgb(150, 149, 149);
+  border-bottom: 1px solid rgb(150, 149, 149);
+}
+
+.vit-down-4 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.vit-down-up-calc {
+  font-size: 0.6rem;
+  font-family: sans-serif;
+  margin-top: -10px;
+}
+
+.vit-down-box5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(245, 243, 243);
+  padding: 10px 7px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+.exam {
+  background-color: #fff;
+  padding: 10px 10px 20px 10px;
+  width: 96%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.history {
+  background-color: #fff;
+  padding: 20px 10px 0 10px;
+  width: 96%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.his-head-right-inp {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.his-head-right-lab {
+  margin-right: 10px;
+}
+
+.up-arrow {
+  height: 1.2rem;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.vit-cons-img2 {
+  height: 0.4rem;
+}
+
+.vit-cons-img21 {
+  height: 0.6rem;
+  margin-right: 5px;
+}
+
+.vit-cons0 {
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-right: 100px;
+  margin-left: -30px;
+}
+
+.footer {
+  background-color: rgb(27, 70, 134);
+  color: white;
+  padding: 5px 10px;
+  width: 96%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.footer-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.clear {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.p-s {
+  background: transparent;
+  border: 1px solid white;
+  color: #fff;
+  padding: 8px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+  font-size: 0.7rem;
+  border-radius: 5px;
+  width: 120px;
+  cursor: pointer;
+}
+
+.blue-set44 {
+  height: 0.8rem;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-left: 2px;
+}
+
+.hin-lang {
+  background: transparent;
+  border: 1px solid white;
+  color: #fff;
+  padding: 8px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 10px;
+  font-size: 0.7rem;
+  border-radius: 5px;
+  width: 130px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.prev {
+  background: transparent;
+  border: 1px solid white;
+  color: #fff;
+  padding: 8px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0.7rem;
+  border-radius: 5px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.doc-ass {
+  background-color: white;
+  border: 1px solid white;
+  color: rgb(27, 70, 134);
+  padding: 8px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0.7rem;
+  border-radius: 5px;
+  width: 130px;
+  cursor: pointer;
+}
+
+.footer-mid-cont {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.print {
+  background: transparent;
+  border: 1px solid white;
+  color: #fff;
+  padding: 8px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 10px;
+  font-size: 0.7rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  width: 45px;
+}
+
+.blue-set48 {
+  height: 0.8rem;
+  cursor: pointer;
+}
+
+.fin-presc {
+  background-color: white;
+  border: 1px solid white;
+  color: rgb(27, 70, 134);
+  padding: 8px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0.7rem;
+  border-radius: 5px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.footer-mid {
+  cursor: pointer;
+}
